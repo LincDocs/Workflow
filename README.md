@@ -3,9 +3,14 @@
 ## 构建过程
 
 1. 复制 .github 文件到你的项目根目录上 (主要使用 `.github/workflows/static.yml`)。此时commit后就会自动构建啦，可能需要稍等一段时间 (在顶部栏中的actions可以看到进度)，等待构建完成后进行下一步。
-2. github的项目页中，以此选择：setting > page > 启用page，并将branch设置为 `gh-pages`，如下图所示。当启用page后，你就可以通过该图中上面给出的链接来访问你的网站了！
+2. github的项目页中，以此选择：setting > page > 将 `Source` 设为 `Deploy from a branch`，将 `Branch` 设置为 `gh-pages`，如下图所示。当启用page后，你就可以通过该图中上面给出的链接来访问你的网站了！
   
   ![alt text](./assets/6a664307563c3775cb5c78cd1f3fbc13.png)
+
+## 一些特殊情况
+
+- 如果文档中有 `agency` 文件，则会选择 `agency` 文件的第一行为仓库地址 (格式为 `https://... .git`)，否则选择当前仓库为文档库。所以你除了可以在原仓库的基础上新增工作流，也可以创建一个代理仓库用于生成文档而不必修改原仓库。
+- 如果文档中有 `docs` 文件夹，则会选择 `docs` 文件夹为文档库，否则选择整个仓库内容为文档库。所以你的仓库是纯粹的文档库或是带有文档的项目，都可以用。
 
 ## FAQ (常见问题)
 
