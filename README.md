@@ -32,6 +32,16 @@
 
 ## FAQ (常见问题)
 
+如果有问题在这里或在issue中进行搜索，如果无法解决，可以创建一个issue提问
+
+- 报错：
+  ```bash
+  /usr/bin/git worktree remove github-pages-deploy-action-temp-deployment-folder --force
+  Error: The deploy step encountered an error: The process '/usr/bin/git' failed with exit code 128 ❌
+  Notice: Deployment failed! ❌
+  ```
+  这可能是因为Action没有开启可写权限 (一般不需要，好像个别情况才要)。在 项目仓库页 > 工具栏的设置 > Action > 拉到下面，有一个选项是让你的工作流可写
+  （如果在Github组织中，需要在组织设置中而非项目仓库页的设置中，进行设置）
 - 为什么我在第二步中没看到 `gh-pages` 分支？
   需要等待构建完成（在顶部栏中的actions可以看到进度，绿色为构建成功，黄色正在构建，红色为构建失败）
 - 为什么我在setting中没有看到 page 选项？
