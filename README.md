@@ -1,5 +1,7 @@
 # 生成文档网站 (零配置极简版)
 
+核心: 使用 [LincZero.github.io](https://github.com/LincZero/LincZero.github.io) 仓库 (扩展于 [VuePress Theme Hope](https://theme-hope.vuejs.press/)) 的单工具流文件构建系统
+
 ## 构建方法
 
 ### 两步完成你的文档网站
