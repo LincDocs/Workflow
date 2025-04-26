@@ -4,7 +4,7 @@
 
 ## 构建方法
 
-两步完成你的文档网站
+**两步创建你的在线文档网站！**
 
 1. 复制 .github 文件到你的项目根目录上 (主要使用 `.github/workflows/static.yml`)。此时commit后就会自动构建啦，可能需要稍等一段时间 (在顶部栏中的actions可以看到进度)，等待构建完成后进行下一步。
 2. github的项目页中，以此选择：setting > page > 将 `Source` 设为 `Deploy from a branch`，将 `Branch` 设置为 `gh-pages`，如下图所示。当启用page后，你就可以通过该图中上面给出的链接来访问你的网站了！
